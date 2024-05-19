@@ -1,0 +1,25 @@
+.dom-section {
+    padding-top: 29px;
+    padding-bottom: 25px;
+}
+
+.dom-section__text {
+    margin-bottom: 30px;
+}
+
+.dom-section__text-bold {
+    font-weight: 700;
+}
+
+.dom-section__text-grey {
+    color: #5E5E5E;
+    margin: 0 auto 30px;
+    border: 1px black solid;
+    padding: 15px 30px;
+    border-top: none;
+}
+
+.dom-section__img {
+    margin: 0 auto 30px;
+}
+

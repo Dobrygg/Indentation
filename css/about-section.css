@@ -1,0 +1,21 @@
+
+.about-section {
+    padding-bottom: 22px;
+}
+.about-section__text {
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 1.2;
+    letter-spacing: 0;
+}
+
+about-section__text:last-child{
+    margin: 0;
+}
+
+.about-section__title {
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 1.2;
+}

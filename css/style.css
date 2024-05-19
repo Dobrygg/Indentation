@@ -1,0 +1,48 @@
+@import url(normalize.css);
+@import url(default.css);
+@import url(about-section.css);
+@import url(content-section.css);
+@import url(element-section.css);
+@import url(dom-section.css);
+@import url(last-section.css);
+@import url(result-section.css);
+
+
+
+
+
+
+
+@font-face {
+    font-family: Roboto;
+        src: local('Roboto-Regular')
+        url("../fonts/Roboto-Regular.ttf") format(ttf);
+        font-weight: 400;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local('Roboto-Bold')
+    url('../fonts/Roboto-bold.ttf') format(ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: local('Roboto-Black')
+    url('../fonts/Roboto-Black.ttf') format(ttf);
+    font-weight: 900;
+}
+
+.article {
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+

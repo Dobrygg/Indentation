@@ -1,0 +1,36 @@
+.content-section {
+    background-color: #F1F1F1;
+    max-width: 1140px;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flow-root;
+    padding-bottom: 25px;
+    padding-top: 22px;
+
+}
+
+.content-section__title {
+    padding-top: 25px;
+    padding-left: 45px;
+    margin-bottom: 20px;
+    font-size: 44px;
+    font-weight: bold;
+}
+
+.content-section__list {
+    padding-left: 65px;
+    color: #02535F;
+    margin-bottom: 25px;
+}
+
+.content-section__item {
+    margin-bottom: 10px;
+}
+
+.content-section__item:last-child {
+    margin: 0;
+}
+.content-section__link {
+    color: #02535F;
+    line-height: 1.2;
+}
