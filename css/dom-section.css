@@ -7,6 +7,10 @@
     margin-bottom: 30px;
 }
 
+.dom-section__text_style-italic {
+    font-style: italic;
+}
+
 .dom-section__text-bold {
     font-weight: 700;
 }

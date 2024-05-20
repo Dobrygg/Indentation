@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preload" href="fonts/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="pre;oad" href="fonts/Roboto-Black.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="fonts/Roboto-Bold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="fonts/Roboto-Black.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="icon" type="img/svg+xml" href="img/circle.svg">
     <link rel="icon" type="image/png" href="img/circle.png">
     <title>Indentation</title>
@@ -15,11 +16,11 @@
         <main>
             <section class="about-section">
                 <div class="container">
-                    <h1 class="about-section__title">Отступы в вёрстке: margin и padding</h1>
+                    <h1 id="about-section" class="about-section__title">Отступы в вёрстке: margin и padding</h1>
                     <p class="about-section__text">
                         В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения смысла и хорошей читаемости вашего кода. Если точнее — речь пойдет об основных правилах организации отступов. Они сильно влияют на общую функциональность кода и, если всё сделано верно, позволяют легко вносить изменения в любую его часть. При этом другие части кода продолжат нормально работать.
                     </p>
-                    <p class="about-section__text">
+                    <p class="about-section__text_margin-zero">
                         Как это часто бывает, знание базовых принципов поможет проявить гибкость и выйти за их пределы. Эти знания особенно важны для начинающих, но также будут полезным напоминанием и для более опытных верстальщиков. Итак, поговорим о фундаментальных основах работы с отступами в вёрстке.
                     </p>
                 </div>
@@ -30,13 +31,13 @@
                 </h2>
                 <ol  class="content-section__list">
                     <li class="content-section__item">
-                        <a class="content-section__link" href="">Отступ задается от предыдущего элемента к следующему</a>
+                        <a class="content-section__link" href="#about-section">Отступ задается от предыдущего элемента к следующему</a>
                     </li>
                     <li class="content-section__item">
-                        <a class="content-section__link" href="">Отступ задается последнему возможному элементу в DOM-дереве</a>
+                        <a class="content-section__link" href="#dom-section">Отступ задается последнему возможному элементу в DOM-дереве</a>
                     </li>
                     <li class="content-section__item">
-                        <a class="content-section__link" href="">Для последнего элемента группы отступ обнуляется</a>
+                        <a class="content-section__link" href="#last-section">Для последнего элемента группы отступ обнуляется</a>
                     </li>
                 </ol>
             </section>
@@ -51,23 +52,23 @@
                         </div>
                         <ul class="element-section__list">
                             <li class="element-section__item">
-                                <span class="element-section__item-bold">ВАЖНО:</span>  <span class="element-section__item-italic">margin</span> всегда задают от предыдущего элемента к следующему.
+                                <span class="element-section__item_style-bold">ВАЖНО:</span>  <span class="element-section__item_italic-style">margin</span> всегда задают от предыдущего элемента к следующему.
                             </li>
                             <li class="element-section__item">
-                                Свойство <span class="element-section__item-italic">margin</span> необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется <span>margin-right</span> и <span>margin-bottom</span>.
+                                Свойство <span class="element-section__item_italic-style">margin</span> необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется <span class="element-section__item_italic-style">margin-right</span> и <span class="element-section__item_italic-style">margin-bottom</span>.
                             </li>
                             <li class="element-section__item">
-                                (!) Свойства <span class="element-section__item-italic">margin-left</span> и <span class="element-section__item-italic">margin-top</span> используются крайне редко.
+                                (!) Свойства <span class="element-section__item_italic-style">margin-left</span> и <span class="element-section__item_italic-style">margin-top</span> используются крайне редко.
                             </li>
                             <li class="element-section__item">
-                                Для <span class="element-section__item-italic">padding</span> верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.
+                                Для <span class="element-section__item_italic-style">padding</span> верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.
                             </li>
                         </ul>
                     </div>
                     <div class="element-section__content-wrapper">
                         <ul class="element-section__list">
                             <li class="element-section__item">
-                                Отступ внутри блока сверху или слева реализуется через padding-top и padding-left родителя.
+                                Отступ внутри блока сверху или слева реализуется через <span class="element-section__item_italic-style">padding-top</span> и <span class="element-section__item_italic-style">padding-left</span> родителя.
                             </li>
                             <li class="element-section__item">
                                 Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.
@@ -84,7 +85,7 @@
             </section>
             <section class="dom-section">
                 <div class="container">
-                    <h2 class="title">Отступ задается последнему возможному элементу в DOM-дереве</h2>
+                    <h2 id="dom-section" class="title">Отступ задается последнему возможному элементу в DOM-дереве</h2>
                     <p class="dom-section__text">
                         Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:
                     </p>
@@ -95,17 +96,17 @@
                     </p>
                     <img class="dom-section__img-margin" src="img/image 14.jpeg" alt="Контентная картинка">
                     <p class="dom-section__text-grey">
-                        <span class="dom-section__text-bold">ВАЖНО:</span> здесь .list-item — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.
+                        <span class="dom-section__text-bold">ВАЖНО:</span> здесь <span class="dom-section__text_style-italic">.list-item</span> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.
                     </p>
                     <p class="dom-section__text">
-                        Казалось бы, можно задать отступ параграфу &lt;p&gt;, либо обёртке &lt;article&gt; для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.
+                        Казалось бы, можно задать отступ параграфу <span class="dom-section__text_style-italic">&lt;p&gt;</span>, либо обёртке <span class="dom-section__text_style-italic">&lt;article&gt;</span> для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.
                     </p>
                     <p class="dom-section__text">
                         Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.
                     </p>
                     <img class="dom-section__img" src="img/image 5.jpeg" alt="Контентная картинка">
                     <p class="dom-section__text">
-                        В случае с заголовком, если ему необходим отступ сверху, последним элементом будет section. Именно для него задается padding-top, а не div с классом container. Свойства margin, которые стоят по умолчанию необходимо обнулить.
+                        В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <span class="dom-section__text_style-italic">section</span>. Именно для него задается <span class="dom-section__text_style-italic">padding-top</span>, а не <span class="dom-section__text_style-italic">div </span>с классом <span class="dom-section__text_style-italic">container</span>. Свойства <span class="dom-section__text_style-italic">margin</span>, которые стоят по умолчанию необходимо обнулить.
                     </p>
                     <img class="dom-section__img" src="img/image 6.jpeg" alt="">
                     <p>
@@ -115,7 +116,7 @@
             </section>
             <section class="last-section">
                 <div class="container">
-                    <h2 class="title">
+                    <h2 id="last-section" class="title">
                         Для последнего элемента группы отступ всегда обнуляется
                     </h2>
                     <p class="last-section__text">
@@ -127,7 +128,7 @@
                     <img class="last-section__img" src="img/image 7.jpeg" alt="Контентная картинка">
                 </div>   
                 <p class="last-section__overview">
-                    В соответствии со вторым принципом: последний margin обнуляется, а нижний отступ задаётся через padding для section. Я чаще всего задаю padding для секции с обоих сторон, если расстояние между секциями 100px задаю секциям padding-top:50px и padding-bottom:50px.
+                    В соответствии со вторым принципом: последний <span class="last-section__text_italic-style">margin</span> обнуляется, а нижний отступ задаётся через <span class="last-section__text_italic-style">padding</span> для <span class="last-section__text_italic-style">section</span>. Я чаще всего задаю <span class="last-section__text_italic-style">padding</span> для секции с обоих сторон, если расстояние между секциями 100px задаю секциям <span class="last-section__text_italic-style">padding-top:50px</span> и <span class="last-section__text_italic-style">padding-bottom:50px</span>.
                 </p>
                 <div class="container">
                     <img class="last-section__img" src="img/image 8.jpeg" alt="Контентная картинка">

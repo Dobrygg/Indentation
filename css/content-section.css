@@ -5,12 +5,13 @@
     border-radius: 10px;
     display: flow-root;
     padding-bottom: 25px;
-    padding-top: 22px;
+    padding-top: 25px;
+    
 
 }
 
 .content-section__title {
-    padding-top: 25px;
+    
     padding-left: 45px;
     margin-bottom: 20px;
     font-size: 44px;
@@ -33,4 +34,7 @@
 .content-section__link {
     color: #02535F;
     line-height: 1.2;
+    border-bottom: 2px solid #02535F;
+    font-size: 20px;
+    
 }

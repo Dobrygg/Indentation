@@ -1,16 +1,6 @@
 
 .about-section {
-    padding-bottom: 22px;
-}
-.about-section__text {
-    font-size: 20px;
-    margin-top: 20px;
-    line-height: 1.2;
-    letter-spacing: 0;
-}
-
-about-section__text:last-child{
-    margin: 0;
+    padding-bottom: 50px;
 }
 
 .about-section__title {
@@ -19,3 +9,15 @@ about-section__text:last-child{
     font-size: 60px;
     line-height: 1.2;
 }
+
+.about-section__text {
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    letter-spacing: 0;
+}
+
+.about-section__text_margin-zero{
+    margin: 0;
+}
+

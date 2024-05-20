@@ -7,6 +7,9 @@
     margin-bottom: 30px;
 }
 
+.last-section__text_italic-style {
+    font-style: italic;
+}
 .last-section__img {
     margin: 0 auto 30px;
 }
