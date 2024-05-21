@@ -7,20 +7,12 @@
 @import url(last-section.css);
 @import url(result-section.css);
 
-
-
 @font-face {
     font-family: Roboto;
         src: local('Roboto Regular'),
         url("../fonts/Roboto-Regular.ttf") format("truetype");
         font-weight: 400;
-}
-
-@font-face {
-    font-family: Roboto;
-        src: local('Roboto Italic'),
-        url("../fonts/Roboto-Italic.ttf") format("truetype");
-        font-weight: 400;
+        font-display: auto;
 }
 
 @font-face {
@@ -28,6 +20,7 @@
         src: local('Roboto Bold'),
         url('../fonts/Roboto-Bold.ttf') format("truetype");
         font-weight: 700;
+        font-display: auto;
 }
 
 @font-face {
@@ -35,9 +28,8 @@
         src: local('Roboto Black'),
         url('../fonts/Roboto-Black.ttf') format("truetype");
         font-weight: 900;
+        font-display: auto;
 }
-
-
 
 .article {
     padding-top: 60px;
