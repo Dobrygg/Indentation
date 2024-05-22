@@ -6,8 +6,6 @@
     display: flow-root;
     padding-bottom: 25px;
     padding-top: 25px;
-    
-
 }
 
 .content-section__title {
@@ -26,15 +24,22 @@
 
 .content-section__item {
     margin-bottom: 10px;
+    
 }
 
 .content-section__item:last-child {
     margin: 0;
 }
+
+.content-section__item::after {
+    content: "";
+    border-bottom: 2px solid black;
+    margin-top: -2px;
+    display: block;
+}
+
 .content-section__link {
     color: #02535F;
     line-height: 1.2;
-    border-bottom: 2px solid #02535F;
     font-size: 20px;
-    
 }
