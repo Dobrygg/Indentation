@@ -11,10 +11,6 @@
     font-style: italic;
 }
 
-.dom-section__text-bold {
-    font-weight: 700;
-}
-
 .dom-section__text-grey {
     color: #5E5E5E;
     margin: 0 auto 30px;

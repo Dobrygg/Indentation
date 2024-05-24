@@ -1,11 +1,10 @@
 @import url(normalize.css);
 @import url(default.css);
-@import url(about-section.css);
-@import url(content-section.css);
+@import url(about-wrapper.css);
+@import url(universal-wrapper.css);
 @import url(element-section.css);
 @import url(dom-section.css);
 @import url(last-section.css);
-@import url(result-section.css);
 
 @font-face {
     font-family: Roboto;
@@ -43,3 +42,22 @@
     line-height: 1.2;
 }
 
+.universal-text:last-child {
+    margin-bottom: 0;
+}
+
+.universal-text {
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    letter-spacing: 0;
+}
+
+.text-bold {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.text-italic {
+    font-style: italic;
+}

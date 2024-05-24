@@ -1,5 +1,5 @@
 .element-section {
-    padding-top: 22px;
+    padding-top: 43px;
     padding-bottom: 29px;
     display: flow-root;
 }
@@ -18,13 +18,13 @@
 .element-section__img-rule:nth-last-child(even){
     margin-right: 30px;
 }
-.element-section__list {
+.element-section__text-wrapper {
     display: inline-block;
     vertical-align: top;
     font-size: 0px;
 }
 
-.element-section__list:nth-last-child(even) {
+.element-section__text-wrapper:nth-last-child(even) {
     margin-right: 30px;
 }
 
@@ -32,21 +32,13 @@
     margin: 0;
 }
 
-.element-section__item {
+.element-section__text {
     font-size: 20px;
     margin-bottom: 30px;
     max-width: 490px;
 }
 
-.element-section__item:last-child {
+.element-section__text:last-child {
     margin: 0;
 }
 
-.element-section__item_style-bold {
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.element-section__item_italic-style {
-    font-style: italic;
-}
