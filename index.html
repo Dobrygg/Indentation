@@ -61,13 +61,13 @@
                         <p class="element-section__text">
                             (!) Свойства <span class="text-italic">margin-left</span> и <span class="text-italic">margin-top</span> используются крайне редко.
                         </p>
+                        <p class="element-section__text">
+                            Для <span class="text-italic">padding</span> верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.
+                        </p>
                     </div>
                 </div>
                 <div class="element-section__content-wrapper">
                     <div class="element-section__text-wrapper">
-                        <p class="element-section__text">
-                            Для <span class="text-italic">padding</span> верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.
-                        </p>
                         <p class="element-section__text">
                             Отступ внутри блока сверху или слева реализуется через <span class="text-italic">padding-top</span> и <span class="text-italic">padding-left</span> родителя.
                         </p>
@@ -99,12 +99,12 @@
                     <img class="dom-section__img-margin" src="img/image_14.jpeg" alt="Контентная картинка">
                     <figcaption>
                         <p class="dom-section__text-grey">
-                            <span class="text-bold">ВАЖНО:</span> здесь <span class="dom-section__text_style-italic">.list-item</span> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.
+                            <span class="text-bold">ВАЖНО:</span> здесь <span class="text-italic">.list-item</span> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.
                         </p>
                     </figcaption>
                 </figure>
                 <p class="universal-text">
-                    Казалось бы, можно задать отступ параграфу <span class="dom-section__text_style-italic">&lt;p&gt;</span>, либо обёртке <span class="dom-section__text_style-italic">&lt;article&gt;</span> для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.
+                    Казалось бы, можно задать отступ параграфу <span class="text-italic">&lt;p&gt;</span>, либо обёртке <span class="text-italic">&lt;article&gt;</span> для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.
                 </p>
                 <p class="universal-text">
                     Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.
@@ -135,7 +135,7 @@
                     В соответствии со вторым принципом: последний <span class="text-italic">margin</span> обнуляется, а нижний отступ задаётся через <span class="text-italic">padding</span> для <span class="text-italic">section</span>. Я чаще всего задаю <span class="text-italic">padding</span> для секции с обоих сторон, если расстояние между секциями 100px задаю секциям <span class="text-italic">padding-top:50px</span> и <span class="text-italic">padding-bottom:50px</span>.
                 </p>
                 <img class="last-section__img" src="img/image_8.jpeg" alt="Контентная картинка">
-                <img class="last-section__img_margin-zero" src="img/image_9.jpeg" alt="Контентная картинка">
+                <img class="last-section__img-zero" src="img/image_9.jpeg" alt="Контентная картинка">
                 <img class="last-section__img" src="img/image_9-1.jpeg" alt="Контентная картинка">
                 <p class="universal-text">
                     Для большего понимания рассмотрим другой пример, который часто встречается на практике:
@@ -149,14 +149,14 @@
                 <p class="universal-text">
                     Советую использовать псевдоклассы :last-child чаще других, например так:
                 </p>
-                <img class="last-section__img_margin-zero" src="img/image_13.jpeg" alt="Контентная картинка">
+                <img class="last-section__img-zero" src="img/image_13.jpeg" alt="Контентная картинка">
             </div> 
         </section>
         <section class="universal-wrapper">
             <h2 class="universal-wrapper__title">
                 Подытожим:
             </h2>
-            <ul class="universal-wrapper__list_padding-another">
+            <ul class="universal-wrapper__list-padding">
                 <li class="universal-wrapper__item">
                     — отступы задаём от предыдущего элемента к следующему
                 </li>

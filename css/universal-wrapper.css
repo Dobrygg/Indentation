@@ -4,9 +4,7 @@
     margin: 0 auto;
     border-radius: 10px;
     display: flow-root;
-    padding-bottom: 25px;
-    padding-top: 25px;
-    padding-left: 45px;
+    padding: 25px 0 25px 45px;
 }
 
 .universal-wrapper__title {
@@ -21,7 +19,11 @@
     margin-bottom: 25px;
 }
 
-.universal-wrapper__list_padding-another {
+.universal-wrapper__list:last-child {
+    margin: 0;
+}
+
+.universal-wrapper__list-padding {
     margin-bottom: 30px;
 }
 
@@ -49,4 +51,9 @@
 
 .universal-wrapper__text {
     max-width: 1065px;
+    margin-bottom: 30px;
+}
+
+.universal-wrapper__text:last-child {
+    margin: 0;
 }
